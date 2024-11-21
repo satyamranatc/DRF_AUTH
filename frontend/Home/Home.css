@@ -1,0 +1,133 @@
+:root {
+    --primary-color: #7367F0;
+    --secondary-color: #82868B;
+    --background-color: #F8F7FA;
+    --card-bg: #FFFFFF;
+    --text-dark: #4B4B4B;
+    --border-radius: 8px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', Arial, sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-dark);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--card-bg);
+    box-shadow: 0 2px 14px 0 rgba(0,0,0,0.06);
+}
+
+nav h2 {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--primary-color);
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5rem 2rem;
+    background: linear-gradient(135deg, var(--primary-color) 0%, #9D87FF 100%);
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--border-radius);
+    transition: all 0.3s ease;
+}
+
+.btn.primary {
+    background-color: white;
+    color: var(--primary-color);
+}
+
+.btn.secondary {
+    border: 2px solid white;
+    color: white;
+}
+
+.btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+}
+
+#features {
+    padding: 4rem 2rem;
+}
+
+.feature-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.feature-card {
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+}
+
+.feature-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
